@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Student Registration Form Using HTML</title>
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <form>
+        <action="#" method="post">
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
+                <br>
+                <label for="fName">Full Name:</label>
+                <input type="text" id="fName" name="fName" required>
+                <br><br>
+
+                <label for="id">Student ID:</label>
+                <input type="text" id="id" name="id" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br><br>
+
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+                <br><br>
+            </fieldset>
+            <br><br>
+
+            <fieldset>
+                <legend><b>Academic Information</b></legend>
+                <br>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="" selected>Select Department</option>
+                    <option value="CS">CSE</option>
+                    <option value="EE">EEE</option>
+                    <option value="BBA">BBA</option>
+                    <option value="ENGLISH">ENGLISH</option>
+                    <option value="CE">Civil Engineering</option>
+                </select>
+                <br><br>
+
+                <label for="semester">Semester:</label>
+                <select id="semester" name="semester" required>
+                    <option value="" selected>Select Semester</option>
+                    <option value="1">1st Semester</option>
+                    <option value="2">2nd Semester</option>
+                    <option value="3">3rd Semester</option>
+                    <option value="4">4th Semester</option>
+                    <option value="5">5th Semester</option>
+                    <option value="6">6th Semester</option>
+                    <option value="7">7th Semester</option>
+                    <option value="8">8th Semester</option>
+                </select>
+                <br><br>
+            </fieldset>
+            <br><br>
+
+            <fieldset>
+                <legend><b>Skills</b></legend>
+                <br>
+
+                <label><b>Programming Languages Known:</b></label>
+                <br><br>
+                <input type="checkbox" id="c" name="languages" value="C">
+                <label for="c">C</label>
+                <br>
+                <input type="checkbox" id="cpp" name="languages" value="C++">
+                <label for="cpp">C++</label>
+                <br>
+                <input type="checkbox" id="java" name="languages" value="Java">
+                <label for="java">Java</label>
+                <br>
+                <input type="checkbox" id="python" name="languages" value="Python">
+                <label for="python">Python</label>
+                <br>
+                <input type="checkbox" id="javascript" name="languages" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+                <br><br>
+            </fieldset>
+            <br><br>
+
+            <fieldset>
+                <legend><b>Additional Information</b></legend>
+                <br>
+
+                <p>Address:</p>
+                <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address here..."
+                    required></textarea>
+                <br><br><br>
+
+                <label for="photo"> Upload Student Photo:</label>
+                <input type="file" id="photo" name="photo">
+                <br><br><br>
+
+                <p>Comments/Suggestions:</p>
+                <textarea id="comments" name="comments" rows="4" cols="50"
+                    placeholder="Any comments or suggestions..."></textarea>
+                <br><br>
+            </fieldset>
+            <br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
